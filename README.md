@@ -2,8 +2,8 @@
 
 A modern, interactive Dice Game built with **React** and **Vite**. This project demonstrates component-based architecture, state management, and CSS animations.
 
-![Project Screenshot](<img width="1257" height="907" alt="image" src="https://github.com/user-attachments/assets/e3c7570c-5f97-45f0-b496-4a5ce5d50646" />
-) 
+<img width="1257" height="907" alt="image" src="https://github.com/user-attachments/assets/e3c7570c-5f97-45f0-b496-4a5ce5d50646" />
+
 
 
 ## ✨ Features
