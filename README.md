@@ -1,16 +1,44 @@
-# React + Vite
+# 🎲 Dice Game (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive Dice Game built with **React** and **Vite**. This project demonstrates component-based architecture, state management, and CSS animations.
 
-Currently, two official plugins are available:
+![Project Screenshot](<img width="1257" height="907" alt="image" src="https://github.com/user-attachments/assets/e3c7570c-5f97-45f0-b496-4a5ce5d50646" />
+) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic Rolling Animation:** The dice faces change rapidly for 3 seconds to simulate a real rolling effect.
+- **Player vs PC Logic:** Player 1 plays against the Computer.
+- **Editable Player Name:** Player 1 can click on their name to update it.
+- **Win/Loss/Draw Detection:** Automatic winner calculation after the dice stop rolling.
+- **Modular Architecture:** Built using the "3-Piece" component rule for better maintainability.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React (Hooks):** `useState`, `useEffect` for game logic and animations.
+- **Vite:** For fast development and building.
+- **CSS3:** Flexbox and custom animations (Shake effect, Hover states).
+- **Google Fonts:** Used 'Lobster' font for a playful UI.
+
+## 📂 Project Structure
+
+The project follows a strict modular file structure where each section is divided into logical sub-components:
+
+```text
+src/
+├── assets/          # Images and static files
+├── components/
+│   ├── Header/      # Header section (Title & Icon)
+│   │   ├── HeaderContainer.jsx
+│   │   ├── ResultTitle.jsx
+│   │   ├── HeaderIcon.jsx
+│   │   └── Header.css
+│   └── GameArea/    # Main game board (Dice, Players, Buttons)
+│       ├── GameContainer.jsx
+│       ├── PlayerCard.jsx
+│       ├── PlayerName.jsx
+│       ├── RollButton.jsx
+│       └── GameArea.css
+├── utils/           # Helper functions & Data (diceMap.js)
+└── App.jsx          # Main Game Logic & State (Lifting State Up)
