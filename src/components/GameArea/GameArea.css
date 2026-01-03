@@ -1,0 +1,87 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.players-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* İki oyuncu arasındaki boşluk */
+  margin-bottom: 50px;
+  flex-wrap: wrap; /* Mobil uyumluluk için */
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-name {
+  font-family: 'Lobster', cursive; /* Header ile uyumlu olsun */
+  font-size: 2rem;
+  color: #4ECCA3;
+  margin-bottom: 20px;
+}
+
+.dice-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.dice-img:hover {
+  transform: scale(1.05);
+}
+
+.roll-btn {
+  background-color: #4ECCA3;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roll-btn:hover {
+  background-color: #3db892;
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  color: #fff;
+} 
+
+
+.name-display-wrapper {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.name-display-wrapper:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.name-input {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 2px solid #4ECCA3;
+  background-color: #222831;
+  color: #EEEEEE;
+  text-align: center;
+  width: 150px;
+  outline: none;
+}

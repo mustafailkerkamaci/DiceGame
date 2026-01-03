@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: 'Lobster', cursive;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-title {
+  font-size: 5rem;
+  color: #4ECCA3; /* O tatlı yeşil renk */
+  text-shadow: 2px 2px 0px #393E46;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header-icon {
+  font-size: 3rem;
+  margin-left: 15px;
+  /* Sallanma animasyonu */
+  animation: shake 2s infinite; 
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
